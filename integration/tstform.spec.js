@@ -12,7 +12,7 @@ describe('buton test', () => {
         cy.get('[placeholder="Last Name"]').type("Last Name");
         cy.get('[ng-model="Adress"]').type("Rua Teste, 1234");
         cy.get('[type="email"]').type("Email@test.com");
-        cy.get('[type="tel"]').type("+1 408 123 1234");
+        cy.get('[type="tel"]').type("+14081231234");
         cy.get('[value="FeMale"]').click();
         cy.get('[id="checkbox1"]').click();
         cy.get('[id="checkbox2"]').click();
@@ -31,7 +31,7 @@ describe('buton test', () => {
         cy.get('[id="firstpassword"]').type("123456");
         cy.get('[id="secondpassword"]').type("123456");
         cy.get('[id="submitbtn"]').click();
-
+        //cy.get('#Button1').click(); Refresh the form
         
 
     });

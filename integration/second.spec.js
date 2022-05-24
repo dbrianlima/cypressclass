@@ -1,25 +1,21 @@
 ///<reference types="cypress" /> 
 
-describe('acesso_login', () =>{
+describe('ultima_qa', () =>{
 
-    it.only('colocar no carrinho', () => {
+    it.only('random_stuff', () => {
 
-        cy.visit('https://www.saucedemo.com/')
+        cy.visit('https://ultimateqa.com/complicated-page');
+        cy.get('#et_pb_contact_name_0').type("User Name");
+        cy.get('#et_pb_contact_email_0').type("Email@example.com");
+        cy.get('#et_pb_contact_message_0').type("Message T2ukDKp_HaJ-PW5ncDGVsRseTXlOXdPgZb4m4lV_DSAjFk");
+        cy.get('#et_pb_contact_form_0 > .et_pb_contact > .et_pb_contact_form > .et_contact_bottom_container > .et_pb_contact_right > .clearfix > .input').type('18')
+        cy.get('#et_pb_contact_form_0 > .et_pb_contact > .et_pb_contact_form > .et_contact_bottom_container > .et_pb_contact_submit').click();''
 
-        cy.get('[id="user-name"]').type('standard_user');
-        cy.get('[id="password"]').type('secret_sauce');
-        cy.get('[id="login-button"]').click();
-        cy.get('[data-test="add-to-cart-test.allthethings()-t-shirt-(red)"]').click();
-        cy.get('.shopping_cart_link').click();
-
-    })
-
-    it('colocar no carrinho', () => {
-        cy.visit('https://www.saucedemo.com/inventory.html')
-
-
+        
 
     })
+
+    
 
 
 })
