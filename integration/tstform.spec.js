@@ -13,10 +13,10 @@ describe('buton test', () => {
         cy.get('[ng-model="Adress"]').type("Rua Teste, 1234");
         cy.get('[type="email"]').type("Email@test.com");
         cy.get('[type="tel"]').type("+14081231234");
-        cy.get('[value="FeMale"]').click();
-        cy.get('[id="checkbox1"]').click();
-        cy.get('[id="checkbox2"]').click();
-        cy.get('[id="checkbox3"]').click();
+        cy.get('[value="FeMale"]').check();
+        cy.get('[id="checkbox1"]').check();
+        cy.get('[id="checkbox2"]').check();
+        cy.get('[id="checkbox3"]').check();
         cy.get('#msdd').click();
         cy.get('li').contains("Arabic").click();
         cy.get('div').contains("Languages").click();
